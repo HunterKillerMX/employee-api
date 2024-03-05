@@ -1,15 +1,15 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "employee-model", "employee-model\employee-model.csproj", "{B5FBAF8B-D14B-4DF3-8BA1-684CF0EB2797}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "employee-model", "employee-model\employee-model.csproj", "{B5FBAF8B-D14B-4DF3-8BA1-684CF0EB2797}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "employee-infrastructure", "employee-infrastructure\employee-infrastructure.csproj", "{7C968C67-AD19-4DD4-93FA-5BF6BFC0D07A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "employee-infrastructure", "employee-infrastructure\employee-infrastructure.csproj", "{7C968C67-AD19-4DD4-93FA-5BF6BFC0D07A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "employee-facade", "employee-facade\employee-facade.csproj", "{05C69850-CEEF-4418-96A2-95D736C7BD6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "employee-facade", "employee-facade\employee-facade.csproj", "{05C69850-CEEF-4418-96A2-95D736C7BD6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "employee-config", "employee-config\employee-config.csproj", "{5E2CA912-65EB-4984-9775-A664B752216B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "employee-config", "employee-config\employee-config.csproj", "{5E2CA912-65EB-4984-9775-A664B752216B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
