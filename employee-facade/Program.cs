@@ -1,9 +1,18 @@
 using employee_config;
 using employee_model;
 using employee_infrastructure;
-using employee_facade.Controllers;
 
+var corspolicyName = "DefaultCorsPolicy";
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: corspolicyName,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:4200");
+                      });
+});
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -12,6 +21,7 @@ builder.Services.AddSwaggerGen();
 
 var section = builder.Configuration.GetSection("EmployeeApiConfig");
 var employeeApiConfig = section.Get<EmployeeApiConfig>();
+
 
 builder.Services.AddSingleton(employeeApiConfig ?? new EmployeeApiConfig());
 builder.Services.AddSingleton<EmployeeDatabase>();
@@ -33,5 +43,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors();
 
 app.Run();

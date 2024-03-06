@@ -6,3 +6,5 @@ employee-infrastructure/bin
 employee-infrastructure/obj
 employee-model/bin
 employee-model/obj
+employee-test/obj
+employee-test/bin
